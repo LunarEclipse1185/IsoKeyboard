@@ -1,4 +1,9 @@
-// Copyright © 2019 Brad Howes. All rights reserved.
+//
+//  TypedNotification.swift
+//  IsoKeyboard
+//
+//  Created by SH BU on 2024/8/17.
+//
 
 import Foundation
 
@@ -22,7 +27,7 @@ open class TypedNotification<ValueType: CustomStringConvertible> {
     
     open func registerOnMain(block: @escaping (ValueType) -> Void) {
         NotificationCenter.default.addObserver(forName: name, object: nil, queue: nil) { note in
-            guard let value = note.userInfo?["value"] as? ValueType else { fatalError("Couldn't understand user info") }
+            guard let value = note.userInfo?["value"] as? ValueType else { fatalError("TypedNotification recieved inconsistent type") }
             DispatchQueue.main.async {
                 block(value)
             }

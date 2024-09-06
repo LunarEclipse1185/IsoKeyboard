@@ -30,7 +30,7 @@ The app relies on a soundfont file to produce sounds. The default built-in sound
 ## Preset Picker
 One soundfont typically has multiple ‘presets’ or ‘instruments’. This component enables you to pick and change preset on the fly. All notes playing at the time of preset change will be stopped.
 ## Keymap Picker
-Pick from different ways of assigning notes to keys. There are only a small number of built-in mappings, but you can ask me to encode more or develop a file parser for Lumatone’s .ltn files
+Pick from different ways of assigning notes to keys. There are only a small number of built-in mappings, but you can ask me to encode more or develop a file parser for Lumatone .ltn files
 
 
 # About Me

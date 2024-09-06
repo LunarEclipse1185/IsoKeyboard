@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  Lumatone
+//  IsoKeyboard
 //
 //  Created by SH BU on 2024/6/15.
 //

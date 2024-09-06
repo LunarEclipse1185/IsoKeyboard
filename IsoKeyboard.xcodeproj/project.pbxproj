@@ -11,7 +11,7 @@
 		F70964462C1DDD5C00B3BEAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70964452C1DDD5C00B3BEAD /* SceneDelegate.swift */; };
 		F70964482C1DDD5C00B3BEAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70964472C1DDD5C00B3BEAD /* ViewController.swift */; };
 		F709644B2C1DDD5C00B3BEAD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F709644A2C1DDD5C00B3BEAD /* Base */; };
-		F709644E2C1DDD5C00B3BEAD /* Lumatone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F709644C2C1DDD5C00B3BEAD /* Lumatone.xcdatamodeld */; };
+		F709644E2C1DDD5C00B3BEAD /* IsoKeyboard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F709644C2C1DDD5C00B3BEAD /* IsoKeyboard.xcdatamodeld */; };
 		F70964502C1DDD5E00B3BEAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F709644F2C1DDD5E00B3BEAD /* Assets.xcassets */; };
 		F70964532C1DDD5E00B3BEAD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F70964522C1DDD5E00B3BEAD /* Base */; };
 		F709647B2C1ED30F00B3BEAD /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = F709647A2C1ED30F00B3BEAD /* Key.swift */; };
@@ -77,7 +77,7 @@
 		F7E3C1F72C21CF5000DDD1CB /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		F7E3C1F92C21DB3C00DDD1CB /* ControlPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPanel.swift; sourceTree = "<group>"; };
 		F7E3C21B2C21E59C00DDD1CB /* AudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
-		F7E40E9B2C7A7EE30071B526 /* Lumatone.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Lumatone.entitlements; sourceTree = "<group>"; };
+		F7E40E9B2C7A7EE30071B526 /* IsoKeyboard.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = IsoKeyboard.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +113,7 @@
 		F70964422C1DDD5C00B3BEAD /* IsoKeyboard */ = {
 			isa = PBXGroup;
 			children = (
-				F7E40E9B2C7A7EE30071B526 /* Lumatone.entitlements */,
+				F7E40E9B2C7A7EE30071B526 /* IsoKeyboard.entitlements */,
 				F70964432C1DDD5C00B3BEAD /* AppDelegate.swift */,
 				F70964452C1DDD5C00B3BEAD /* SceneDelegate.swift */,
 				F74AD8B92C2F000F00C2AD02 /* Global */,
@@ -125,7 +125,7 @@
 				F70964492C1DDD5C00B3BEAD /* Main.storyboard */,
 				F709644F2C1DDD5E00B3BEAD /* Assets.xcassets */,
 				F70964542C1DDD5E00B3BEAD /* Info.plist */,
-				F709644C2C1DDD5C00B3BEAD /* Lumatone.xcdatamodeld */,
+				F709644C2C1DDD5C00B3BEAD /* IsoKeyboard.xcdatamodeld */,
 			);
 			path = IsoKeyboard;
 			sourceTree = "<group>";
@@ -280,7 +280,7 @@
 				F70964442C1DDD5C00B3BEAD /* AppDelegate.swift in Sources */,
 				F7E3C1F82C21CF5000DDD1CB /* Keyboard.swift in Sources */,
 				F74A05C92C7A78BC003CDFBC /* SF2Parser.swift in Sources */,
-				F709644E2C1DDD5C00B3BEAD /* Lumatone.xcdatamodeld in Sources */,
+				F709644E2C1DDD5C00B3BEAD /* IsoKeyboard.xcdatamodeld in Sources */,
 				F7E3C1FA2C21DB3C00DDD1CB /* ControlPanel.swift in Sources */,
 				F7E3C1C82C21312100DDD1CB /* LockButton.swift in Sources */,
 				F7E3C1F42C21C11900DDD1CB /* Keymap.swift in Sources */,
@@ -438,13 +438,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Lumatone/Lumatone.entitlements;
+				CODE_SIGN_ENTITLEMENTS = IsoKeyboard/IsoKeyboard.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5M9GM5HK46;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Lumatone/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Lumatone;
+				INFOPLIST_FILE = IsoKeyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = IsoKeyboard;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -459,8 +460,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brainbu.Lumatone;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brainbu.IsoKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -475,13 +477,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Lumatone/Lumatone.entitlements;
+				CODE_SIGN_ENTITLEMENTS = IsoKeyboard/IsoKeyboard.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5M9GM5HK46;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Lumatone/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Lumatone;
+				INFOPLIST_FILE = IsoKeyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = IsoKeyboard;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -496,8 +499,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.brainbu.Lumatone;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brainbu.IsoKeyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -531,13 +535,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		F709644C2C1DDD5C00B3BEAD /* Lumatone.xcdatamodeld */ = {
+		F709644C2C1DDD5C00B3BEAD /* IsoKeyboard.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				F709644D2C1DDD5C00B3BEAD /* Lumatone.xcdatamodel */,
 			);
 			currentVersion = F709644D2C1DDD5C00B3BEAD /* Lumatone.xcdatamodel */;
-			path = Lumatone.xcdatamodeld;
+			path = IsoKeyboard.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

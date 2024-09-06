@@ -1,4 +1,4 @@
-an isometric microtonal keyboard aiming to recreate Lumatone on ios devices
+an isomorphic microtonal keyboard aiming to recreate Lumatone on ios devices
 
 ! UI only tested for iPad Gen 9, which i own
 

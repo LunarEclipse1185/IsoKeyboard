@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  Lumatone
+//  IsoKeyboard
 //
 //  Created by SH BU on 2024/6/15.
 //
@@ -105,3 +105,21 @@ class ViewController: UIViewController, UIDocumentPickerDelegate {
     }
     
 }
+
+/*
+class ViewController_IconGen: UIViewController {
+    static let paddingChangedNotif = TypedNotification<CGFloat>(name: "paddingChanged")
+    
+    let key = Key(note: 24, color: colorRGB(156, 190, 249), labelMapping: NoteLabel.symbol31)
+    // A ssh
+    //(202, 219, 245)
+    override func viewWillAppear(_ animated: Bool) {
+        view.addSubview(key)
+        view.backgroundColor = #colorLiteral(red: 0.8770987988, green: 0.8770987988, blue: 0.8770987988, alpha: 1)
+        key.scale = 2.0
+        key.translatesAutoresizingMaskIntoConstraints = false
+        key.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        key.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+    }
+}
+*/
